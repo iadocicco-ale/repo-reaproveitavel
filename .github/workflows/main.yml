@@ -13,4 +13,4 @@ jobs:
               run: echo "Publicação da Relase final"
     CD:
         needs: [CI]
-        uses: iadocicco-ale/repo-reaproveitavel/blob/main/.github/workflows/cd.yml@main
+        uses: iadocicco-ale/repo-reaproveitavel/.github/workflows/cd.yml@main
