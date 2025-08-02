@@ -15,5 +15,4 @@ jobs:
     CD:
         needs: [CI]
         uses: iadocicco-ale/repo-reaproveitavel/.github/workflows/cd.yml@main
-        secrets:
-          ambiente: ${{ secrets.AMBIENTE_ENTREGA }}
+        secrets: inherit
